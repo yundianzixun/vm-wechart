@@ -1,0 +1,120 @@
+<!--pages/wxCase/costomNav/index.wxml-->
+<view class="custom_head" style="height:{{navHeight}}px;">
+    <view class="flex-row j_b" style="height:{{navObj}}px;padding-top:{{navTop}}px;padding-right:{{navObjWid+5}}px;">
+        <view class="head_store text_title">
+            {{store_name}}
+        </view>
+    </view>
+</view>
+<view class="head" style="margin-top:{{navHeight}}px">
+    <view class="text_title_sub">{{store_name_sub}}</view>
+    <view class="head_input">
+        <image src="/images/search_icon.png" class="search_icon"></image>
+        <input type="text" placeholder="iphone 13 火热发售中" placeholder-class="place_holder" bindtap="goSearch" value="{{search}}"></input>
+        <image src="/images/camera_icon.png" class="camera_icon"></image>
+    </view>
+</view>
+<view class="head-bg mb20"></view>
+
+<!--商品活动Banner-->
+<view class="banner-container" style="margin-top: {{carouselMarginTop}}rpx">
+    <swiper class="swiper1" bindtap="tapBanner" indicator-dots="{{indicatorDots}}" autoplay circular>
+        <swiper-item wx:for="{{bannerList}}" wx:key="id">
+            <image mode="widthFix" bindtap="tapBanner" data-linkUrl="{{item.linkUrl}}" src="{{item.imgUrl}}" />
+        </swiper-item>
+    </swiper>
+    <view wx:if="{{dynamicList && show_buy_dynamic == '1' }}" class="goodsDynamic">
+        <swiper class="swiper2" autoplay circular vertical>
+            <navigator wx:for="{{dynamicList}}" wx:key="index">
+                <swiper-item>
+                    <view class="goodsDynamic-item">
+                        <image mode="aspectFill" src="{{item.avatarUrl}}"></image>
+                        <text>{{item.nick}} 购买了 {{item.goodsName}}</text>
+                    </view>
+                </swiper-item>
+            </navigator>
+        </swiper>
+    </view>
+</view>
+
+<!--商品分类导航-->
+<view class="category-container">
+    <view class="category-box">
+        <view class="category-list" wx:for="{{categorieList}}" wx:key="id">
+            <view class="category-column" bindtap="tabClick" data-id="{{item.id}}">
+                <image mode="aspectFill" class="category-imgbox" src="{{item.icon}}"></image>
+                <view class="category-title">{{item.name}}</view>
+            </view>
+        </view>
+        <view class="category-list" wx:for="{{cmsCategories}}" wx:key="id">
+            <view class="category-column" bindtap="tabClickCms" data-idx="{{ index }}">
+                <image mode="aspectFill" class="category-imgbox" src="{{item.icon}}"></image>
+                <view class="category-title">{{item.name}}</view>
+            </view>
+        </view>
+    </view>
+</view>
+<!--平台消息-->
+<view class="notice-box" wx:if="{{noticeList}}">
+    <swiper class="notice_swiper" vertical autoplay circular interval="8000">
+        <swiper-item wx:for="{{noticeList}}" wx:key="id">
+            <image slot="left-icon" class="notice-icon" src="../../images/home/notice.png"></image>
+            <text>{{ item.title }}</text>
+        </swiper-item>
+    </swiper>
+</view>
+<view class="special-container">
+    <view class="special-title">
+        <text class="name">新品特卖</text>
+        <view class="line_flag"></view>
+    </view>
+    <block wx:for-items="{{specialList}}" wx:key="id">
+        <navigator url="/pages/brand/brand?activityId={{item.id}}">
+            <image class="head-img" src="{{item.imgUrl}}" mode="widthFix"></image>
+        </navigator>
+        <text class="brand-name">{{item.name}}</text>
+        <view class='pms'>
+            <image src="../../images/home/special.png" mode="widthFix"></image>
+            {{item.remark}}
+        </view>
+    </block>
+</view>
+<!--福利专场 start-->
+<view class="welfare-container">
+    <view class="special-title">
+        <text class="title">福利专场</text>
+        <view class="line_name">
+            <text>每天早10晚8准时上新</text>
+        </view>
+    </view>
+    <view class="goods-list">
+        <block wx:for="{{goodsList}}" wx:key="id">
+            <view class="welfares-good" catchtap="catchTapCategory" data-name="{{item.name}}" data-goodsid="{{item.id}}">
+                <view>
+                    <image src="{{item.imgUrl}}" class="welfares-image" mode="widthFix" />
+                </view>
+                <view class="goods-card_upper">
+                    <view class="product-name">
+                        白色短袖连衣裙荷叶边裙摆宽松韩版休闲纯白清爽优雅连衣裙</view>
+                    <view class="goods-card_tags">
+                        <view data-index="0" class="goods-card_tag">限时抢购
+                        </view>
+                    </view>
+                </view>
+                <view class="product-price-wrap">
+                    <p class="product-price-new">￥{{item.originalPrice}}</p>
+                    <p class="product-price-old">￥{{item.currentPrice}}</p>
+                    <p class="discount">{{item.discount}}折</p>
+                </view>
+            </view>
+        </block>
+        <view class="weui-loadmore" wx:if="{{ isLoading }}">
+            <view class="weui-loading"></view>
+            <view class="weui-loadmore__tips">加载中...</view>
+        </view>
+        <view wx:if="{{ !isLoading }}" class="loading">
+            <text>没有更多商品</text>
+        </view>
+    </view>
+</view>
+<!--福利专场 end-->

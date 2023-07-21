@@ -1,0 +1,54 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/cart/index",
+    "pages/goods/category/index",
+    "pages/usercenter/index",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "tabBar": {
+    "color": "#8E9192",
+    "borderStyle": "white",
+    "selectedColor": "#FF4091",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "iconPath": "images/nav/home-off.png",
+        "selectedIconPath": "images/nav/home-on.png",
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "iconPath": "images/nav/fl-off.png",
+        "selectedIconPath": "images/nav/fl-on.png",
+        "pagePath": "pages/goods/category/index",
+        "text": "分类"
+      },
+      {
+        "iconPath": "images/nav/cart-off.png",
+        "selectedIconPath": "images/nav/cart-on.png",
+        "pagePath": "pages/cart/index",
+        "text": "购物车"
+      },
+      {
+        "iconPath": "images/nav/my-off.png",
+        "selectedIconPath": "images/nav/my-on.png",
+        "pagePath": "pages/usercenter/index",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "动力商城",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "usingComponents": {
+    "navBar": "/components/navBar/navBar"
+  }
+}
