@@ -26,7 +26,7 @@
 
 <p>请使用微信扫描以下二维码：</p>
 
- <img src="https://i.postimg.cc/ZYfSxngN/gh-beb964f84374-430.jpg" width = "200" height = "200" alt="模版小程序二维码" align=center />
+ <img src="https://i.postimg.cc/ZYfSxngN/gh-beb964f84374-430.jpg" width = "200" height = "200" alt="动力商城小程序二维码" align=center />
 
 
 ##  项目介绍
