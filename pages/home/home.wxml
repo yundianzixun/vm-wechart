@@ -8,9 +8,9 @@
 </view>
 <view class="head" style="margin-top:{{navHeight}}px">
     <view class="text_title_sub">{{store_name_sub}}</view>
-    <view class="head_input">
+    <view class="head_input" bindtap="goSearch">
         <image src="/images/search_icon.png" class="search_icon"></image>
-        <input type="text" placeholder="iphone 13 火热发售中" placeholder-class="place_holder" bindtap="goSearch" value="{{search}}"></input>
+        <input type="text" placeholder="iphone 13 火热发售中" placeholder-class="place_holder"  value="{{search}}"></input>
         <image src="/images/camera_icon.png" class="camera_icon"></image>
     </view>
 </view>

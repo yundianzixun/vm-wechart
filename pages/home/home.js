@@ -197,15 +197,11 @@ Page({
     //     console.log("onUnload......");
     // },
     goSearch() {
-        wx.showToast({
-            icon: 'none',
-            title: '点击了搜索框',
-            duration: 500
-        });
         // 埋点示例：按钮点击
         sa.track('ButtonClicked', {
             $event_name: '点击了搜索框',
         });
+        wx.navigateTo({ url: '../home/history/index' })
     },
     tapBanner() {
         wx.showToast({

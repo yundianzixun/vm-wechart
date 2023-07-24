@@ -1,37 +1,104 @@
-### 3 分钟了解如何进入开发
+<p align="center">
+  <a href="https://shop.100boot.cn" target="_blank">
+    <img alt="vm-wechart Logo" width="200" src="https://shop.100boot.cn/images/logo.png">
+  </a>
+</p>
 
-欢迎使用 Codeup，通过阅读以下内容，你可以快速熟悉 Codeup ，并立即开始今天的工作。
+<p align="center">
+  <a href="https://img.shields.io/github/stars/yundianzixun/vm-wechart">
+    <img src="https://img.shields.io/github/stars/yundianzixun/vm-wechart" alt="License">
+  </a>  
+  <a href="https://github.com/yundianzixun/vm-wechart/issues">
+    <img src="https://img.shields.io/github/issues/yundianzixun/vm-wechart" alt="License">
+  </a>  
+  <a href="https://github.com/yundianzixun/vm-wechart/LICENSE">
+    <img src="https://img.shields.io/github/license/Tencent/tdesign-miniprogram-starter-retail" alt="License">
+  </a>
+</p>
 
-### 提交**文件**
+# 动力商城小程序
+#### 英文名：vm-wechart
+#### 中文名：动力商城
+这个名字的英文部分“Vibe”指的是“氛围、气氛、情绪”的意思，代表了电商平台所提供的购物体验和服务。而中文名则表达了平台的商业属性。希望这个名字能够传达出购物平台的愉悦和动力，以及商家和用户之间互动的积极性和繁荣性。
+动力商城（vm-wechart） 示例小程序，采用微信小程序原生语言框架进行搭建，涵盖完整的电商购物场景需求。
 
-首先，你需要了解在 Codeup 中如何提交代码文件，跟着文档「[__提交第一行代码__](https://thoughts.teambition.com/sharespace/5d88b152037db60015203fd3/docs/5dc4f6786b81620014ef7574)」一起操作试试看吧。
+## 预览
 
-### 开启扫描
+<p>请使用微信扫描以下二维码：</p>
 
-开发过程中，为了更好的管理你的代码资产，Codeup 内置了「[__代码规约扫描__](https://thoughts.teambition.com/sharespace/5d88b152037db60015203fd3/docs/5dc4f68b6b81620014ef7588)」和「[__敏感信息检测__](https://thoughts.teambition.com/sharespace/5d88b152037db60015203fd3/docs/5dc4f6886b81620014ef7587)」服务，你可以在代码库设置-集成与服务中一键开启，开启后提交或合并请求的变更将自动触发扫描，并及时提供结果反馈。
+ <img src="https://i.postimg.cc/ZYfSxngN/gh-beb964f84374-430.jpg" width = "200" height = "200" alt="模版小程序二维码" align=center />
 
-![](https://img.alicdn.com/tfs/TB1nRDatoz1gK0jSZLeXXb9kVXa-1122-380.png "")
 
-![](https://img.alicdn.com/tfs/TB1PrPatXY7gK0jSZKzXXaikpXa-1122-709.png "")
+##  项目介绍
 
-### 代码评审
+### 1. 业务介绍
 
-功能开发完毕后，通常你需要发起「[__代码合并和评审__](https://thoughts.teambition.com/sharespace/5d88b152037db60015203fd3/docs/5dc4f6876b81620014ef7585)」，Codeup 支持多人协作的代码评审服务，你可以通过「[__保护分支__](https://thoughts.teambition.com/sharespace/5d88b152037db60015203fd3/docs/5dc4f68e6b81620014ef758c)」策略及「[__合并请求设置__](https://thoughts.teambition.com/sharespace/5d88b152037db60015203fd3/docs/5dc4f68f6b81620014ef758d)」对合并过程进行流程化管控，同时提供 WebIDE 在线代码评审及冲突解决能力，让你的评审过程更加流畅。
+动力商城小程序是个经典的单店版电商小程序，涵盖了电商的黄金链路流程，从商品->购物车->结算->订单等。小程序总共包含 28 个完整的页面，涵盖首页，商品详情页，个人中心，售后流程等基础页面。采用mock+动态数据进行展示，提供了完整的商品展示、交易与售后流程。页面详情：
 
-![](https://img.alicdn.com/tfs/TB1XHrctkP2gK0jSZPxXXacQpXa-1432-887.png "")
+<img src="https://shop.100boot.cn/images/software/function-list.jpg" width = "650" height = "900" alt="模版小程序页面详情" align=center />
 
-![](https://img.alicdn.com/tfs/TB1V3fctoY1gK0jSZFMXXaWcVXa-1432-600.png "")
+已完成页面截图如下：
 
-### 编写文档
+<p align="center">
+    <img alt="example-home1" width="200" src="https://shop.100boot.cn/images/software/home01.jpeg" />
+    <img alt="example-home2" width="200" src="https://shop.100boot.cn/images/software/home02.jpeg" />
+    <img alt="example-home3" width="200" src="https://shop.100boot.cn/images/software/home03.jpeg" />
+    <img alt="example-sort" width="200" src="https://shop.100boot.cn/images/software/home04.jpeg" />
 
-项目推进过程中，你的经验和感悟可以直接记录到 Codeup 代码库的「[__文档__](https://thoughts.teambition.com/sharespace/5d88b152037db60015203fd3/docs/5e13107eedac6e001bd84889)」内，让智慧可视化。
+</p>
 
-![](https://img.alicdn.com/tfs/TB1BN2ateT2gK0jSZFvXXXnFXXa-1432-700.png "")
+### 2. 项目构成
 
-### 成员协作
+动力商城小程序是基于原生开发的小程序，使用的是微信提供的 JavaScript、WXML、WXSS进行构建，学习和二次开发门槛低。
 
-是时候邀请成员一起编写卓越的代码工程了，请点击右上角「成员」邀请你的小伙伴开始协作吧！
+项目目录结构如下：
+```
+|-- vm-wechart
+    |-- README.md
+    |-- app.js
+    |-- app.json
+    |-- app.wxss
+    |-- components	//	公共组件库
+    |-- config	//	基础配置
+    |-- model	//	mock 数据
+    |-- pages
+    |   |-- cart	//	购物车相关页面
+    |   |-- home	//	首页
+    |   |-- goods	//	商品相关页面
+    |   |-- usercenter	//	个人中心及收货地址相关页面
+    |-- services	//	请求接口
+    |-- style	//	公共样式与iconfont
+    |-- utils	//	工具库
+```
 
-### 更多
+### 3. 数据模拟
 
-Git 使用教学、高级功能指引等更多说明，参见[__Codeup帮助文档__](https://thoughts.teambition.com/sharespace/5d88b152037db60015203fd3/docs/5dc4f6756b81620014ef7571)。
+动力商城小程序采用真实的接口数据，直接调用后端返回逻辑，在小程序展示完整的购物场景与购物体验逻辑。
+
+### 4. 添加新页面
+
+1. 在 `pages `目录下创建对应的页面文件夹
+2. 在 `app.json` 文件中的 ` "pages"` 数组中加上页面路径
+3. [可选] 在 `project.config.json` 文件的 `"miniprogram-list"` 下添加页面配置
+
+## 5. 构建运行
+
+1. `npm install`
+2. 小程序开发工具中引入工程
+3. 构建 npm
+
+## 6. 基础库版本
+
+最低基础库版本`^2.6.5`
+
+## 7. 反馈
+
+邮件联系：zhenghhgz@163.com
+小编微信：zhenghhz
+
+##  开源协议
+
+动力商城 遵循 [MIT 协议]
+
+
+

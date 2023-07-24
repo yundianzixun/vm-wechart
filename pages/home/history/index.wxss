@@ -1,0 +1,154 @@
+/* pages/jsCase/historySearch/index.wxss */
+/* .head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90rpx;
+    box-sizing: border-box;
+    padding: 0 20rpx;
+    background: #fff;
+  }
+  .head_input {
+    position: relative;
+    flex: 1;
+  }
+  
+  .search_icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -15rpx;
+    width: 28rpx;
+    height: 30rpx;
+    padding-left: 23rpx;
+  }
+  
+  .head input {
+    height: 60rpx;
+    padding-left: 75rpx;
+    font-size: 28rpx;
+    border-radius: 30rpx;
+    background: #F5F5F5;
+  }
+  
+  .place_holder {
+    font-size: 28rpx;
+    color: #999999;
+  }
+  
+  .sha_icon{
+    margin-left: 18rpx;
+    font-size: 28rpx;
+    color: #333333;
+  } */
+page {
+    padding-bottom: 10rpx;
+    --bg: #fff;}
+/**搜索框**/
+.head {
+    width: 780rpx;
+    height: 100rpx;
+    position: fixed;
+    top: 0;
+    background: var(--bg);
+    z-index: 99;
+}
+
+.head_input {
+    position: relative;
+    flex: 1;
+    margin: 12rpx 10rpx;
+    flex-wrap: wrap;
+}
+
+.search_icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -15rpx;
+    width: 30rpx;
+    height: 31rpx;
+    padding-left: 26rpx;
+
+}
+
+.camera_icon {
+    position: absolute;
+    top: 50%;
+    right: 183rpx;
+    margin-top: -15rpx;
+    width: 36rpx;
+    height: 33rpx;
+}
+
+
+.head_input input {
+    height: 68rpx !important;
+    padding-left: 75rpx;
+    font-size: 28rpx;
+    background: rgb(240, 239, 239);
+    border-radius: 32rpx !important;
+    width: 530rpx;
+
+}
+.search_btn{
+    position: absolute;
+    top: 50%;
+    right: 50rpx;
+    margin-top: -26rpx;
+    width: 80rpx;
+    height: 33rpx;
+    font-size: 34rpx;
+    font-weight: 400;
+
+}
+.place_holder {
+    font-size: 30rpx;
+    color: #999999;
+}
+
+.sha_icon {
+    margin-left: 18rpx;
+    font-size: 28rpx;
+    color: #333333;
+}
+/**热门搜索**/
+
+.con {
+    padding: 130rpx 20rpx;
+}
+
+.title {
+    font-size: 30rpx;
+    font-weight: 600;
+    color: #333333;
+}
+
+.c_item {
+    font-size: 25rpx;
+    height: 49rpx;
+    line-height: 49rpx;
+    padding: 0 26rpx;
+    background: rgba(131, 183, 253, 0.1);
+    border-radius: 31rpx;
+    justify-content: center;
+    margin-bottom: 24rpx;
+    margin-right: 24rpx;
+    white-space: pre;
+    color: #999;
+}
+
+.list {
+    margin-top: 40rpx;
+    flex-wrap: wrap;
+}
+
+.color {
+    color: #83B7FD;
+}
+
+.clear {
+    color: #999;
+    font-size: 25rpx;
+}
