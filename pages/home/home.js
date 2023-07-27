@@ -153,7 +153,6 @@ Page({
                 page: page + 1,
                 isLoading: false,
                 hasMore: end < total,
-                // loading: false
             });
         }, 500);
     },
@@ -199,7 +198,7 @@ Page({
     goSearch() {
         // 埋点示例：按钮点击
         sa.track('ButtonClicked', {
-            $event_name: '点击了搜索框',
+            $event_name: '搜索框',
         });
         wx.navigateTo({ url: '../home/history/index' })
     },
@@ -211,7 +210,7 @@ Page({
         });
         // 埋点示例：按钮点击
         sa.track('ButtonClicked', {
-            $event_name: '点击了Banner',
+            $event_name: 'Banner',
         });
     },
 });

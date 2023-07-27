@@ -1,1 +1,28 @@
-<view>敬请期待</view>
+<navigation id='Navigation' show-search='{{true}}'></navigation>
+<view class="container">
+  <view class="type-container-boxx">
+    <view class="type-container">
+      <view wx:for-items="{{categoryList}}" wx:key="id" class="type-box" bindtap="tabClick" id="{{item.id}}">
+        <view class="type-navbar-item {{categoryId == item.id ? 'type-item-on' : ''}}">
+          {{item.name}}
+        </view>
+        <view class="separate"></view>
+      </view>
+    </view>
+   <view class="type-list">
+      <view class="swiper-container" wx:if="{{ isBannerShow }}">
+        <image bindtap="tapBanner" data-id="{{categoryId}}" src="{{categoryImgUrl}}" class="slide-image" mode="widthFix" />
+      </view>
+      <view if="{{item.level == 2}}" class="type-menu">
+        <view class="type-level-box" wx:for-items="{{categoryChildList}}" wx:key="id">
+          <view id="{{item.id}}" class="type-level-item " bindtap="levelClick" data-id="{{item.id}}">
+            <image class="type-img" src="{{item.logo}}"></image>
+            <text>{{item.name}}</text>
+          </view>
+        </view>
+      </view>
+    </view> 
+  </view>
+</view>
+<view class="top-line"></view>
+<view class="bottom-lin"></view>

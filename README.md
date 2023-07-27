@@ -37,14 +37,18 @@
 
 <img src="https://shop.100boot.cn/images/software/function-list.jpg" width = "650" height = "900" alt="模版小程序页面详情" align=center />
 
-已完成页面截图如下：
+#### 已完成功能
+- 商城首页
+- 商城首页 - 搜索商品
+- 商城分类
+
+#### 已完成页面截图如下：
 
 <p align="center">
     <img alt="example-home1" width="200" src="https://shop.100boot.cn/images/software/home01.jpeg" />
     <img alt="example-home2" width="200" src="https://shop.100boot.cn/images/software/home02.jpeg" />
     <img alt="example-home3" width="200" src="https://shop.100boot.cn/images/software/home03.jpeg" />
-    <img alt="example-sort" width="200" src="https://shop.100boot.cn/images/software/home04.jpeg" />
-
+    <img alt="example-sort" width="200" src="https://shop.100boot.cn/category.jpeg" />
 </p>
 
 ### 2. 项目构成
