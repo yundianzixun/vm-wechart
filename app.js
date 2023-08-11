@@ -19,7 +19,11 @@ App({
         success: res => {
           let Height = res.windowHeight;
           this.globalData.Height = Height;
+          this.globalData.bottomHeight = res.screenHeight - res.safeArea.bottom;
         },
+        fail(err){
+            console.log(err);
+        }
       })
   
       // 登录
@@ -28,7 +32,7 @@ App({
           // 发送 res.code 到后台换取 openId, sessionKey, unionId
         }
       })
-  
+      
   
       // 自定义头部
       let menuButtonObject = wx.getMenuButtonBoundingClientRect();
@@ -56,6 +60,7 @@ App({
       })
     },
     globalData: {
-      userInfo: null
+      userInfo: null,
+      bottomHeight: 0
     }
   })

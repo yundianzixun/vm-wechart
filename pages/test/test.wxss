@@ -1,0 +1,18 @@
+.intro {
+    margin: 30px;
+    text-align: center;
+    padding-top: 100rpx;
+  }
+  .btn{
+    position: fixed;
+    width: 100%;
+    height: auto;
+    line-height: 100rpx;
+    text-align: center;
+    background-color: #fd463e;
+    color:#fff;
+    left: 0;
+    bottom:0;
+  }
+  
+  

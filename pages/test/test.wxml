@@ -1,0 +1,6 @@
+<view class="intro">
+  <view>小程序 iPhone X 底部按钮兼容示例</view>
+  <view>helang.love@qq.com</view>
+</view>
+<!-- <view class='btn' style='padding-bottom:{{ isIphoneX ? 34 : 0 }}px;'>我是按钮</view> -->
+<view class='btn' style="padding-bottom:{{bottomHeight}}px">我是按钮</view>

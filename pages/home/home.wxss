@@ -221,6 +221,7 @@ page {
     overflow: hidden;
     color: #e64340;
 }
+
 .notice-icon {
     width: 130rpx;
     height: 32rpx;
@@ -228,7 +229,7 @@ page {
     background-color: #fff;
     position: relative;
     z-index: 2;
-   
+
 }
 
 
@@ -324,8 +325,9 @@ page {
     display: flex;
     flex-wrap: wrap;
 }
-.welfares-good{
-    margin:0px auto;
+
+.welfares-good {
+    margin: 0px auto;
     margin-bottom: 10rpx;
     position: relative;
     display: inline-block;
@@ -334,33 +336,38 @@ page {
     width: 50%;
     padding: 10rpx;
     box-sizing: border-box;
-  }
-  .welfares-image{
+}
+
+.welfares-image {
     width: 100%;
     display: inline-block;
-    border: 1px #eee solid; 
-  }
-  .welfares-good .product-name{
+    border: 1px #eee solid;
+}
+
+.welfares-good .product-name {
     color: #000;
     /* height: 28px; */
-    text-align:left;
-     margin: 0px 5px; 
-     margin-bottom: 5px; 
-  }
-  .goods-card_upper {
+    text-align: left;
+    margin: 0px 5px;
+    margin-bottom: 5px;
+}
+
+.goods-card_upper {
     display: flex;
     flex-direction: column;
     overflow: hidden;
     flex: 1 1 auto;
-  }
-  .goods-card_tags {
+}
+
+.goods-card_tags {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 8rpx 0 0 0;
-    margin-left:5px;
-  }
-  .goods-card_tag {
+    margin-left: 5px;
+}
+
+.goods-card_tag {
     color: #e80080;
     background: transparent;
     font-size: 20rpx;
@@ -374,28 +381,31 @@ page {
     white-space: nowrap;
     word-break: keep-all;
     text-overflow: ellipsis;
-  }
-  .product-price-wrap{
+}
+
+.product-price-wrap {
     height: 40rpx;
-  }
-  
-  .product-price-wrap .product-price-new{
+}
+
+.product-price-wrap .product-price-new {
     color: #e80080;
-    margin-left:5px;
-    font-weight:900;
+    margin-left: 5px;
+    font-weight: 900;
     font-size: 30rpx;
-  }
-  .product-price-wrap .product-price-old{
+}
+
+.product-price-wrap .product-price-old {
     color: #888;
     text-decoration: line-through;
     padding-left: 2px;
-  }
-  .product-price-wrap .discount{
+}
+
+.product-price-wrap .discount {
     position: absolute;
     right: 5px;
     background-color: #000;
     color: #fff;
-  }
+}
 
 /*  加载更多   */
 .weui-loading {
@@ -432,4 +442,3 @@ page {
     font-size: 12px;
     text-align: center;
 }
-

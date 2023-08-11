@@ -26,6 +26,11 @@ Page({
         hasMore: true, // 是否还有更多数据
     },
     onLoad: function (options) {
+        // 埋点示例：页面浏览
+        sa.track('$AppViewScreen', {
+            $authKey: config.authKey,
+            $event_name: '进入首页',
+        });
         var maillTitle = this.data.maillTitle;
         this.setData({
             store_name: maillTitle.name,
@@ -45,11 +50,7 @@ Page({
         this.dynamicShow();
         //加载商品列表
         this.loadGoodsList();
-        // 埋点示例：页面浏览
-        sa.track('$AppViewScreen', {
-            $authKey: config.authKey,
-            $event_name: '进入首页',
-        });
+
     },
     bannerShow: function (success) {
         var that = this;
@@ -200,7 +201,9 @@ Page({
         sa.track('ButtonClicked', {
             $event_name: '搜索框',
         });
-        wx.navigateTo({ url: '../home/history/index' })
+        wx.navigateTo({
+            url: '../home/history/index'
+        })
     },
     tapBanner() {
         wx.showToast({
@@ -212,5 +215,18 @@ Page({
         sa.track('ButtonClicked', {
             $event_name: 'Banner',
         });
+    },
+    catchTapCategory: function (e) {
+        var that = this;
+        var goodsId = e.currentTarget.dataset.goodsid;
+        console.log('goodsId:' + goodsId);
+        // 埋点示例：按钮点击
+        sa.track('ButtonClicked', {
+            $event_name: '商品详情',
+        });
+        //跳转商品详情
+        wx.navigateTo({
+            url: '../goods/detail/index?goodsId=' + goodsId
+        })
     },
 });

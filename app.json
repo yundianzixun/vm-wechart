@@ -1,9 +1,11 @@
 {
   "pages":[
     "pages/home/home",
+    "pages/goods/detail/index",
+    "pages/test/test",
+    "pages/cart/index",
     "pages/goods/category/index",
     "pages/home/history/index",
-    "pages/cart/index",
     "pages/usercenter/index",
     "pages/index/index",
     "pages/logs/logs"
@@ -46,7 +48,6 @@
     "navigationBarTitleText": "动力商城",
     "navigationBarTextStyle": "black"
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json",
   "lazyCodeLoading": "requiredComponents",
   "usingComponents": {

@@ -2,29 +2,20 @@ const config = require('../../../config.js');
 var categoryServices = require('../../../services/goods/category.js');
 var Request = require('../../../services/request.js');
 const sa = require('../../../utils/sensorsdata.min.js');
-var app = getApp()
+var app = getApp();
 Page({
     data: {
-        indicatorDots: true,
-        autoplay: true,
-        interval: 8000,
-        duration: 800,
-        swiperCurrent: 0,
-        selectCurrent: 0,
         categoryId: 0,
-        loadingMoreHidden: true,
-        search: true,
-        nonehidden: true,
-        searchidden: true,
         isBannerShow: false,
     },
     onLoad: function (options) {
-        // 加载商品分类
-        this.categoryShow();
         sa.track('$AppViewScreen', {
             $authKey: config.authKey,
             $event_name: '进入商品分类',
         });
+        // 加载商品分类
+        this.categoryShow();
+        
     },
     categoryShow: function (e) {
         var that = this;
@@ -104,5 +95,12 @@ Page({
         sa.track('ButtonClicked', {
             $event_name: 'Banner',
         });
+    },
+    goSearch() {
+        // 埋点示例：按钮点击
+        sa.track('ButtonClicked', {
+            $event_name: '搜索框',
+        });
+        wx.navigateTo({ url: '../../home/history/index' })
     },
 })

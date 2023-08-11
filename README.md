@@ -98,7 +98,7 @@
 ## 7. 反馈
 
 邮件联系：zhenghhgz@163.com
-小编微信：zhenghhz
+小编微信：zhenghhgz
 
 ##  开源协议
 
